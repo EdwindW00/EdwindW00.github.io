@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edwin's Tools</title>
+<meta name="description" content="Overzicht van Edwin's tools: Edwin's Budgettool en de KDV Rekentool.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23222d3d%22/><text x=%2216%22 y=%2222%22 font-size=%2214%22 font-family=%22Arial%22 font-weight=%22800%22 fill=%22white%22 text-anchor=%22middle%22>ET</text></svg>">
+<meta name="theme-color" content="#222d3d">
+<style>
+  :root{
+    --bg:#f4f6f5; --card:#ffffff; --text:#1b2521; --muted:#5b6b64; --border:#dbe4e0;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.45;}
+  header.top{padding:38px 20px 30px;text-align:center;
+    background:linear-gradient(135deg,#222d3d,#111722);color:#fff;}
+  header.top h1{margin:0 0 6px;font-size:1.7rem;}
+  header.top p{margin:0;color:#c6cdd6;font-size:0.95rem;}
+  main{max-width:640px;margin:-20px auto 0;padding:0 16px 40px;}
+  .card-link{display:block;text-decoration:none;color:inherit;
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:20px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,0.06);
+    transition:transform .12s ease, box-shadow .12s ease;}
+  .card-link:active{transform:scale(0.98);}
+  .card-top{display:flex;align-items:center;gap:14px;margin-bottom:8px;}
+  .mark{width:46px;height:46px;border-radius:12px;flex:0 0 auto;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:1rem;color:#fff;}
+  .mark.budget{background:#0f1c4a;}
+  .mark.kdv{background:#0f7a5c;}
+  .card-title{font-size:1.15rem;font-weight:700;margin:0;}
+  .card-desc{color:var(--muted);font-size:0.92rem;margin:0;}
+  .card-arrow{margin-left:auto;color:var(--muted);font-size:1.3rem;flex:0 0 auto;}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;}
+  .tag{font-size:0.72rem;background:var(--bg);border:1px solid var(--border);
+    border-radius:999px;padding:3px 9px;color:var(--muted);}
+  footer{max-width:640px;margin:10px auto 0;padding:0 16px;color:var(--muted);font-size:0.8rem;text-align:center;}
+  footer a{color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>Edwin's Tools</h1>
+  <p>Overzicht van kleine zelfstandige webtools</p>
+</header>
+
+<main>
+  <a class="card-link" href="https://edwindw00.github.io/DreSo-Budgettool/">
+    <div class="card-top">
+      <div class="mark budget">EB</div>
+      <div>
+        <p class="card-title">Edwin's Budgettool</p>
+        <p class="card-desc">Budgettool voor interieur- en verbouwingsprojecten</p>
+      </div>
+      <div class="card-arrow">&rarr;</div>
+    </div>
+    <div class="tags">
+      <span class="tag">Budgetbeheer</span>
+      <span class="tag">Projecten</span>
+      <span class="tag">Rapportage</span>
+    </div>
+  </a>
+
+  <a class="card-link" href="https://edwindw00.github.io/KDV-Rekentool/">
+    <div class="card-top">
+      <div class="mark kdv">KDV</div>
+      <div>
+        <p class="card-title">KDV Rekentool</p>
+        <p class="card-desc">Optimale werk-privébalans met kinderen in de kinderopvang</p>
+      </div>
+      <div class="card-arrow">&rarr;</div>
+    </div>
+    <div class="tags">
+      <span class="tag">Kinderopvangtoeslag</span>
+      <span class="tag">Netto inkomen</span>
+      <span class="tag">Toeslagenval</span>
+    </div>
+  </a>
+</main>
+
+<footer>
+  <p>Broncode op <a href="https://github.com/EdwindW00" target="_blank" rel="noopener">github.com/EdwindW00</a></p>
+</footer>
+
+</body>
+</html>
